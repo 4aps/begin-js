@@ -32,10 +32,36 @@ let newIsLoggedIn = Boolean(isLoggedIn);
 let anyNum;
 
 let stringNumber = String(anyNum);
-console.log(typeof stringNumber); 
-console.log(stringNumber); 
+//console.log(typeof stringNumber); 
+//console.log(stringNumber); 
 
 // to String
 // null => null (conversion typeof shows as string for *)
 // undefined =>undefined
 // 23.32 = string
+
+//**************** Operations ******************//
+/*
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2/2);
+console.log(2**4);
+console.log(12%8);
+*/
+
+let value = 82;
+let negValue = -value;
+//console.log(negValue);
+
+let str1 = "Hello";
+let str2 = " Papparaazi!";
+//console.log(str1 + str2);
+
+//first input is considered as preferred type form LHS:
+
+console.log("1" + "1"); // 11
+console.log("1" + 1);  // 11
+console.log("1" + 1 + 3); // 113
+console.log(1 + 5 + "7"); // 67
+console.log(1 + 9 + "5" + 7 + 2); // 10572
