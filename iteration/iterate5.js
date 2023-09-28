@@ -33,7 +33,7 @@ const courses = [
     },
     {
         Course: 'Data Scientist course',
-        Price: 11299
+        Price: 10299
     }
 ];
 
