@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(26, 12, 39);
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+
+<script>
+    const div = document.createElement('div');
+    //console.log(div);
+    div.className = "main";
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.setAttribute = ('title', 'NewToJS');
+    div.style.color = "green";
+    div.style.backgroundColor = "orange";
+    div.style.padding = '12px';
+    div.style.fontSize = '30px'; 
+    //div.innerText = 'MarsCode';
+    const addText = document.createTextNode('MarsCode');
+    div.appendChild(addText);
+    document.body.appendChild(div);
+    console.log(div);
+
+</script>
+
+</html>
