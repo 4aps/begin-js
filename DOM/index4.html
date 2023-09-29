@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        body{
+            background-color: black;
+            color: #fff;
+        }
+        .language{
+            color: green;
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="language"></li>
+    </ul>
+    <script>
+        function addLang(langName){
+            const li = document.createElement('li');
+            li.innerHTML = `${langName}`;
+            document.querySelector('.language').appendChild(li);
+        }
+        addLang('Javascript')
+        addLang('Python');
+        addLang('C++');
+        addLang('Java');
+        
+        function addLangOptimized(langName){
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(langName));
+            document.querySelector('.language').appendChild(li);   
+        }
+        addLangOptimized('Swift');
+        addLangOptimized('Rust');
+        addLangOptimized('Php');
+        addLangOptimized('GoLang');
+        addLangOptimized('Next.js');
+
+        //Edit
+        const secondLang = document.querySelector('li:nth-child(2)');
+        //secondLang.innerHTML = 'Mojo';
+        const newLi = document.createElement('li');
+        newLi.textContent = 'Mojo';
+        secondLang.replaceWith(newLi);
+
+        //Edit
+        //const firstLang = document.querySelector('li:nth-child(3)');
+        //firstLang.outerHTML = '<li>Typescript</li>';
+
+        //Append
+        // const secondLangu = document.querySelector('li:nth-child(2)');
+        // const newList = document.createElement('li');
+        // newList.appendChild(document.createTextNode('Hello'));
+        // secondLangu.appendChild(newList);
+
+        //remove
+        // const lastLang = document.querySelector('li:last-child');
+        // lastLang.remove();
+
+    </script>
+</body>
+</html>
