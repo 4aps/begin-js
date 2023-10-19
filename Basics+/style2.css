@@ -1,0 +1,118 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #de8a00;
+    background-image: linear-gradient(90deg, #de8a00 0%, #FC00FF 100%);
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(91, 15, 91);
+    border: 2px solid black;
+    border-radius: 1px;
+    display: flex;
+    position: relative;  
+    overflow: hidden;
+}
+.box:hover::before {
+    left: 0%;
+}
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 22, 22, 0.5);
+    transition: left 2.5s ease-out;
+    opacity: 0.5;
+}
+
+.items1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: white;
+}
+.items2 {
+    width: 50%;
+    height: 100%;
+}
+
+#contentBox {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.content1 {
+    position: relative;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+    margin: 40px 40px;
+    text-shadow: 3px 3px 4px black;
+    width: 75%;
+}
+h1{
+    font-size: 2.4rem;
+}
+
+div{
+    display: block;
+}
+/* p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} */
+
+.content2 p{
+    font-size: 1.6rem;
+    margin:50px;
+}
+
+.items2 img{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+}
+
+.content3{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+#box1{
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 2px black;
+}
+#unit{
+    font-size: large;
+}
+/* @media (max-width: 940px) {
+    .items2 img{
+        display: flex;
+        flex-wrap: wrap;
+        z-index: -1;
+    }
+} */
