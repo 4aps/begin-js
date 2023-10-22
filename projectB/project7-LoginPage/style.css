@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainbox{
+    margin: auto;
+    margin-top: 3%;
+    height: 85vh;
+    width: 80vw;
+    /* background-color: aqua; */
+    border: 2px solid rgba(255, 255, 255, 0.877);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.logobox{
+    height: 100%;
+    width: 50%;
+}
+
+h1{
+    padding: 50px;
+}
+
+.main_img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.loginbox{
+    padding: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
+    font-size: xx-large;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 1px 1px 1px black;
+    border: 1px solid azure;
+    border-radius: 16px;
+    box-shadow:
+     0 -3em 3em rgba(254, 249, 249, 0.3),
+    0 0 0 2px rgb(203, 193, 193),
+     .3em 0.3em 1em rgba(195, 210, 195, 0.6);
+}
+
+a{
+    text-decoration: none;
+}
+.recover{
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.data{
+    font-size: 2rem;
+    height: 20vh;
+    width: 25vw;
+    margin: auto;
+}
+
+#btn{
+    background-color: rgb(75, 160, 75);
+    color: azure;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px #ffffff;
+    box-shadow: inset 1px 1px 1px black;
+    box-shadow:
+    inset 0 -3em 3em rgba(11, 132, 11, 0.3),
+    0 0 0 2px white,
+    inset .3em 0.3em 1em rgba(29, 83, 33, 0.6);
+    font-size: larger;
+    height: 100px;
+    width: 500px;
+    margin: 30px;
+}
+
+#btn:hover {
+    scale: 0.96;
+    transition: ease-in-out 0.69s;
+}
+
+input[type=text] {
+    width: 100%;
+    font-size: xx-large;
+    height: 7vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    
+  }
+
+  input[type=submit] {
+    margin: auto;
+    width: 100%;
+    font-size: xx-large;
+    height: 7vh;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: rgb(21, 52, 225);
+    color: azure;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px #ffffff;
+    box-shadow: inset 1px 1px 1px black;
+    box-shadow:
+    inset 0 -3em 3em rgba(11, 132, 11, 0.3),
+    0 0 0 2px white,
+    inset .3em 0.3em 1em rgba(29, 83, 33, 0.6);
+  }
+  input[type=submit]:hover {
+    scale: 1.03;
+    transition: ease-in-out 0.69s;
+  }
