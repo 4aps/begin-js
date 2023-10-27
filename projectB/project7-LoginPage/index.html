@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rely Login</title>
+    <title id="title">Rely Login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="fav.png" type="image/x-png">
 </head>
@@ -35,7 +35,7 @@
                         <br>
                     <!-- <label for="Password">Password</label> -->
                     <input 
-                        type="text" 
+                        type="password" 
                         id="pswd" 
                         name="pswd" 
                         value=""
@@ -50,17 +50,28 @@
                 <a href="#">Forgotten password?</a>
             </div>
             <div class="create">
-                <button id="btn">
+                <button id="showPopupButton">
                     Create new account
                 </button>
             </div>
-            <a href="#">
-                <p>
+                <p style="color: rgb(13, 13, 148); margin-bottom: 20px; margin-top: 10px;">
                     Grow Together
                 </p>
-            </a>
         </div>
-        
+        <div class="popup-container" id="popupContainer" style="display: none;">
+            <div class="signup-form">
+                <span class="close-button" id="closePopupButton" >&times;</span>
+                <span id="SignUp">Sign Up<span>
+                <form>
+                    <input type="text" class="form-input" placeholder="First Name">
+                    <input type="text" class="form-input" placeholder="Last Name">
+                    <input type="email" class="form-input" placeholder="Email">
+                    <input type="password" class="form-input" placeholder="Password">
+                    <button type="submit" class="submit-button">Sign Up</button>
+                </form>
+            </div>
+        </div>
     </main>
 </body>
+<script src="app.js"></script>
 </html>
