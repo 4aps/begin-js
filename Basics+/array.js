@@ -19,13 +19,13 @@ console.log(myArray2[4]);
 const newArr = new Array(1, 34, 22, 5, 67);
 //console.log(newArr);
 
-//newArr.unshift(22);
-//console.log(newArr);
+newArr.unshift(22);
+console.log(newArr);
 
-//newArr.shift();
-//console.log(newArr);
+newArr.shift();
+console.log(newArr);
 
-//console.log(newArr.indexOf(22));
+console.log(newArr.indexOf(22));
 
 //let anyVar = console.log(newArr.join());  //undefined
 //console.log(typeof anyVar); // string
@@ -36,14 +36,14 @@ const newArr = new Array(1, 34, 22, 5, 67);
 const anyArr = new Array(10, 32, 45, 34, 65, 15, 86 , 24, 8, 12, 99);
 //console.log("A", anyArr);
 
-//console.log("B", anyArr.slice(1,5));
+onsole.log("B", anyArr.slice(1,5));
 //console.log("A", anyArr);
 
-//console.log("C", anyArr.splice(1, 5)); // mannipulate the original array [1, 5] get spliced
+console.log("C", anyArr.splice(1, 5)); // mannipulate the original array [1, 5] get spliced
 //console.log("A", anyArr);
 
-//console.log(anyArr.toLocaleString());
-//console.log("D", anyArr.reverse());
+console.log(anyArr.toLocaleString());
+console.log("D", anyArr.reverse());
 
-//console.log(anyArr.entries());
+console.log(anyArr.entries());
 console.log(anyArr.values());
